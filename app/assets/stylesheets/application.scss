@@ -1,0 +1,170 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import 'normalize';
+ @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css');
+ @import url('https://fonts.googleapis.com/css?family=Raleway:700');
+
+ $bgcolor-sidebar: #c2fffc;
+ .section {
+     display: -ms-grid;
+     display: grid;
+     max-width: 250px;
+     grid-template-columns: 20% auto;
+     background-color: $bgcolor-sidebar;
+ }
+ #logo{
+     width: 40px;
+     height: 40px;
+     margin: 60% 70%;
+     padding-bottom: 100px;
+        /*-webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);*/
+ }
+ ul{
+     list-style: none;
+     text-decoration: none;
+     padding: 20px 23px;
+ }
+ li{
+     line-height: 1em;
+     padding: 1em;
+     margin: 10% 20%;
+     font-family: "montserrat";
+ }
+ a{
+    color: black;
+    text-decoration: none;
+    outline: none;
+ }
+ .login{
+     margin: 20% 50%;
+     font-family: montserrat;
+     max-width: 300px;
+     color: #000000;
+     padding: 15px 15px;
+ }
+ .catagory{
+     color: rgb(87, 24, 189);
+ }
+ #mainContent{
+     display: sticky;
+     display: -webkit-sticky;
+     top: 0px;
+     position: absolute;
+     bottom: 0;
+     left: 27%;
+     right: 0;
+     font-family: "Montserrat";
+     p{
+         display: inline;
+     }
+ }
+ .header{
+    position: relative;
+    background: #8cfff0;
+    padding: 1em 3em;
+    border-bottom: 1px solid #d6dce0;
+ }
+
+ @media(min-width: 992px){
+     .header{
+         position: relative;
+         margin-left: -11.9%;
+     }
+ }
+ .button{
+     margin-top: -30px;
+     float: right !important;
+     margin-left: 0.9em;
+     cursor: pointer !important;
+
+ }
+ button{
+     outline: none;
+     background: transparent;
+     border: 1px solid #d6dce0;
+     padding: 0.5em 1.5em;
+     border-radius: 1.5em;
+     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     /*&:hover{
+         background: #000000;
+         color: turquoise;
+         transition: 0.4s ease-out all;
+     }*/
+        a {
+            color: #33acb7 !important;
+        }
+ }
+ .post_wrapper{
+     padding: 3em;
+     border-bottom: 1px solid #d6dce0;
+     .title{
+         margin: 0;
+         text-decoration: none;
+         color: #2a2f35;
+         font-size: 1.5em;
+         &:hover{
+             color: #33acb7 !important;
+         }
+     }
+ }
+input[type="text"], textarea{
+    width: 50%;
+    margin-bottom: 24px;
+    
+}
+#page_wrapper{
+    padding: 3em;
+}
+.clearfix::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
+#post_content{
+    padding: 1em 3em;
+    .title{
+        font-weight: 500;
+        text-decoration: none;
+        color: #000000;
+        margin-bottom: 0; 
+    }
+}
+input[type="submit"]{
+    outline: none;
+    background: transparent;
+    border: 1px solid #d6dce0;
+    padding: 0.5em 1.5em;
+    border-radius: 1.5em;
+    margin-left: 0.5em;
+    &:hover{
+        color: #33acb7;
+        border: 1px solid #33acb7;
+    }
+}
+input[type="text"], input[type="email"], input[type="password"],
+input[type="textarea"], textarea{
+    width: 50%;
+    border: 1px solid #d6dce0;
+    border-radius: 0.35em;
+    padding: 0.5em 1em;
+}
+body{
+    max-height: 100vh;
+}
