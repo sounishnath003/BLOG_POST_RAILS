@@ -5,14 +5,17 @@ class PostsController < ApplicationController
     end
     # New file html
     def new
+        @post = Post.new
     end
 
     # WhenEver the New Post Is created
     def create
     @post = Post.new(post_params)
-    @post.save
-
-    redirect_to @post 
+        if @post.save
+            redirect_to @post 
+        else
+            render 'new'
+        end
     end
 
     def show
