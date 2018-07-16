@@ -39,6 +39,7 @@
      list-style: none;
      text-decoration: none;
      padding: 20px 23px;
+     font-size: 15px;
  }
  li{
      line-height: 1em;
@@ -91,7 +92,7 @@
  .button{
      margin-top: -30px;
      float: right !important;
-     margin-left: 0.9em;
+     margin-left: 1.11em;
      cursor: pointer !important;
 
  }
@@ -169,16 +170,25 @@ input[type="textarea"], textarea{
     border-radius: 0.35em;
     padding: 0.99em 1em;
 }
+textarea{
+    padding: 2.1em 1em;
+}
 body{
     max-height: 100vh;
 }
 #errors{
     h3{
-        color: red;
+        color: rgb(7, 5, 5);
     }
     li{
         padding: 0px;
         line-height: 30px;
         text-decoration: inherit;
     }
+}
+.comments_h2{
+    margin-top: 45px;
+    font-size: 19px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d6dce0;
 }
