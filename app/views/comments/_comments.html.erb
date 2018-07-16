@@ -5,6 +5,7 @@
         <p class="comment_time"><%= time_ago_in_words(comment.created_at) %> Ago</p>
     </div>
 
+<% if user_signed_in? %>
     <p>
     <%= link_to 'Delete', [comment.post, comment], 
         method: :delete,
@@ -12,4 +13,5 @@
         data: (confirm: "Are You Sure? Comment will de Deleted!")
          %>
     </p>
+<% end %>
 </div>
