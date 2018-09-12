@@ -1,0 +1,2 @@
+class AftersignoutController < ApplicationController
+end
